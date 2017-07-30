@@ -1,3 +1,17 @@
+
+$( document ).ready(function() {
+     $('#content').html("");
+    $('#content').append("<h3>Menu</h3>");
+    var menu = ["<div class='menu-item'></div>"];
+    var menu_title = ["<h4>Monkey Burger</h4>","<h4>Monkey Burger</h4>","<h4>Monkey Burger</h4>","<h4>Monkey Burger</h4>"]
+    var menu_content = ["<p>Obvious original. Who doesn't love monkeys meat!</p>","<p>Obvious original. Who doesn't love monkeys meat!</p>",
+                        "<p>Obvious original. Who doesn't love monkeys meat!</p>","<p>Obvious original. Who doesn't love monkeys meat!</p>"]
+    for(var i = 0;i<menu_title.length;i++){
+        $('#content').append(menu[0]);
+        $('.menu-item:last').append(menu_title[i]);
+        $('.menu-item:last').append(menu_content[i]);
+    }
+});
 $('#home').click(function(){
     $('#content').html("");
     $('#content').append("<h3>Menu</h3>");
