@@ -1,28 +1,55 @@
-#content{
-    width:960px;
-    margin:0 auto;
-    text-align: center;
-}
+
+
 header{
     width:960px;
     margin:0 auto;
     text-align: center;
+    padding: 0;
 }
 ul{
     float: right;
-    margin-top: 10px;
     text-align: center;
+    border-bottom: 1px solid black; 
+    border-bottom: none;
+    z-index: 1;
+    margin: 10px 0 0 0;
+    padding:0px;
 }
 h1{
     float: left;
     margin-top: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+h3{
+    padding: 10px auto;
+    margin: 0 auto;
 }
 
 li{
     display: inline-block;
-    
-    margin:5px 30px;
+    padding:10px 20px;
+    border-bottom:3px solid white;
+    z-index: 3;
 }
+li.active{
+    border: 1px solid black;
+     border-bottom:3px solid white;
+}
+
 .clear{
     clear: both;
+    height: 0;
+}
+#content{
+    width:960px;
+    margin:0 auto;
+    z-index: 0;
+    text-align: center;
+    border: 1px solid black;
+    padding:20px 0 ;
+
+}
+form{
+    margin-top: 10px;
 }

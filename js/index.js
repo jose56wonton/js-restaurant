@@ -1,11 +1,13 @@
 
 $( document ).ready(function() {
-     $('#content').html("");
+    $('#content').html("");
+    $(".active").removeClass("active");
+    $("#home").addClass("active");
     $('#content').append("<h3>Menu</h3>");
     var menu = ["<div class='menu-item'></div>"];
-    var menu_title = ["<h4>Monkey Burger</h4>","<h4>Monkey Burger</h4>","<h4>Monkey Burger</h4>","<h4>Monkey Burger</h4>"]
-    var menu_content = ["<p>Obvious original. Who doesn't love monkeys meat!</p>","<p>Obvious original. Who doesn't love monkeys meat!</p>",
-                        "<p>Obvious original. Who doesn't love monkeys meat!</p>","<p>Obvious original. Who doesn't love monkeys meat!</p>"]
+    var menu_title = ["<h4>Monkey Munchies</h4>","<h4>Kangaroo Cucumbers</h4>","<h4>Toucan Terriyaki</h4>","<h4>Buffalo Burger</h4>"]
+    var menu_content = ["<p>Obvious original. Who doesn't love monkeys meat!</p>","<p>Random Combo. That will have your mouth a'jumpin!</p>",
+                        "<p>International sacrilege!Asian & Australian all in one</p>","<p>Basic generic. I ran out of ideas :)!</p>"]
     for(var i = 0;i<menu_title.length;i++){
         $('#content').append(menu[0]);
         $('.menu-item:last').append(menu_title[i]);
@@ -14,11 +16,13 @@ $( document ).ready(function() {
 });
 $('#home').click(function(){
     $('#content').html("");
+    $(".active").removeClass("active");
+    $("#home").addClass("active");
     $('#content').append("<h3>Menu</h3>");
     var menu = ["<div class='menu-item'></div>"];
-    var menu_title = ["<h4>Monkey Burger</h4>","<h4>Monkey Burger</h4>","<h4>Monkey Burger</h4>","<h4>Monkey Burger</h4>"]
-    var menu_content = ["<p>Obvious original. Who doesn't love monkeys meat!</p>","<p>Obvious original. Who doesn't love monkeys meat!</p>",
-                        "<p>Obvious original. Who doesn't love monkeys meat!</p>","<p>Obvious original. Who doesn't love monkeys meat!</p>"]
+    var menu_title = ["<h4>Monkey Munchies</h4>","<h4>Kangaroo Cucumbers</h4>","<h4>Toucan Terriyaki</h4>","<h4>Buffalo Burger</h4>"]
+    var menu_content = ["<p>Obvious original. Who doesn't love monkeys meat!</p>","<p>Random Combo. That will have your mouth a'jumpin!</p>",
+                        "<p>International sacrilege!Asian & Australian all in one</p>","<p>Basic generic. I ran out of ideas :)!</p>"]
     for(var i = 0;i<menu_title.length;i++){
         $('#content').append(menu[0]);
         $('.menu-item:last').append(menu_title[i]);
@@ -29,6 +33,8 @@ $('#home').click(function(){
 
 $('#about').click(function(){
     $('#content').html("");
+    $(".active").removeClass("active");
+    $("#about").addClass("active");
     $('#content').append("<h3>About Us</h3>")
     var menu = ["<div class='about-us'></div>"];
     var menu_content = ["<p>Wacky burger was started in July 2017. It has prides itself on its unique recipies, and crazy food creations.<br>"+
@@ -43,6 +49,8 @@ $('#about').click(function(){
 
 $('#contact').click(function(){
     $('#content').html("");
+    $(".active").removeClass("active");
+    $("#contact").addClass("active");
     $('#content').append("<h3>Contact Us</h3>")
     var menu = ["<form class='contact-us'></form>"];
     var form_content = ["Name","Email","Note"];
